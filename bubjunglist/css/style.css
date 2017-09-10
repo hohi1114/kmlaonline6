@@ -1,0 +1,22 @@
+div{
+	border:1px solid black;
+}
+.no-border{
+	border:0px;
+}
+.jaepangyul {
+	background-color:red;
+	color:white;
+}
+.bubjung {
+	background-color:red;
+	color:white;
+}
+.ilban{
+	background-color:#ECD031 ;
+	color:white;
+}
+.chuehoo{
+	background-color:#81CA45;
+	color:white;
+}
