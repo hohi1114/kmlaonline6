@@ -1,0 +1,26 @@
+.first-row{
+	margin-top:20px;
+	border:1px solid black;
+	background-color:gray;
+	color:white;
+}
+.border{
+	border-right:1px solid black;
+}
+.second-row{
+	border:1px solid black;
+	border-top:none;
+}
+.button{
+	border:1px solid #6491AB ;
+	background-color:#8CB5CD;
+}
+.buttons{
+		margin-top:30px;
+}
+.giso{
+	margin-right:10px;
+}
+a{
+	color:black;
+}
