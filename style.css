@@ -1,0 +1,35 @@
+body{
+	font-family: 'Muli', serif;
+}
+
+.title{
+	font-size:18px;
+	color:black;
+}
+
+h1{
+	margin-bottom:20px;
+}
+
+.second{
+	margin-top:10px;
+}
+
+button{
+	margin-top:10px;
+	background-color:lightblue;
+}
+
+select{
+	border:none;
+	width:100%;
+	text-align-last:center;
+}
+
+input{
+		text-align-last:center;
+
+}.text-right{
+	text-align-last:right;
+}
+
