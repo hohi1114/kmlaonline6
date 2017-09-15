@@ -1,9 +1,26 @@
+<!--
+    열심히 해보는 건 좋은데..
+    html 읽기가 너무 힘드네요.
+    <select> 태그 사용했으면 </select> 로 닫아주는 건 html에서 기본적으로 해줘야 하는 거죠..
+    하나 만들어 놓은 거 복붙하지 말고
+    제대로 기능 구현 되는지 확인해 보면서 계속 확대해 나가세요.
+
+    그리고 이 코드들은 팀원 더 나아가서 나중에 가서는 부원들이랑 함께 볼 것들인데
+    깔끔하게 정리를 해주세요. 들여쓰기도 잘 하고.
+
+    첫 번째 셀에 대해서 자바스크립트 구현해 놨으니까 참고해요.
+
+    -김현재
+-->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/bootstrap.css">
         <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
@@ -35,24 +52,6 @@
             .dress {background-color:#f8ff00; }
             #tg-6k2t {background-color:#D2E4FC;text-align: center;vertical-align:top}
         </style>
-       <script>
-        var cell= $('td');
-        cell.each(function(){
-            var cell_value= $(this).html();
-            if((cell_value==1)){
-                $(this).css({'background-color' : '#fe0000'});
-            }
-            else if (cell_value==2){
-                 $(this).css({'background-color' : '#3166ff'});
-
-            }
-            else {
-                $(this).css({'background-color' : '#f8ff00'});
-            }
-
-            }
-        </script>
-
     </head>
     <body>
     <table border=0>
@@ -64,7 +63,14 @@
     <th class="tg-ovb0" colspan="16">소강당 법정 좌석표</th>
   </tr>
   <tr>
-    <td class="cell", id="tg-6k2t">1 <select name="date"> <option value="default"> default</option> <option value="1">doze</option> <option value="2"> talking </option> <option value="3">dress </option></td>
+    <td class="cell", id="test-id">1
+        <select name="date" id="test-select">
+            <option value="default">default</option>
+            <option value="1">doze</option>
+            <option value="2">talking</option>
+            <option value="3">dress</option>
+        </select>
+    </td>
     <td id="tg-6k2t">2<select name="date"> <option value="default"> default</option> <option value="1">doze</option> <option value="1">talking </option> <option value="1">dress </option></td>
     <td id="tg-6k2t">3<select name="date"><option value="default"> default</option>  <option value="1">doze</option> <option value="1">talking </option> <option value="1">dress </option></td>
     <td id="tg-6k2t">4<select name="date"> <option value="default"> default</option> <option value="1">doze</option> <option value="1">talking </option> <option value="1">dress </option></td>
@@ -260,7 +266,7 @@
     <td id="tg-6k2t">166<select name="date"> <option value="default"> default</option> <option value="1">doze</option> <option value="1">talking </option> <option value="1">dress </option></td>
     <td id="tg-6k2t">167<select name="date"> <option value="default"> default</option> <option value="1">doze</option> <option value="1">talking </option> <option value="1">dress </option></td>
     <td id="tg-6k2t">168<select name="date"> <option value="default"> default</option> <option value="1">doze</option> <option value="1">talking </option> <option value="1">dress </option></td>
-   
+
   </tr>
   <tr>
     <td class="tg-yw4l"></td>
@@ -284,7 +290,7 @@
 
   </td>
   <td>
-  
+
   <table class="gg" width="400" height="300">
   <tr>
     <th class="gg-mpef" colspan="2">List of Colors </th>
@@ -305,6 +311,26 @@
 
   </td>
   </tr>
+
+
 </table>
+
+<script>
+    $("select#test-select").change(function(){
+    switch($("select#test-select").val()){
+        case "1":
+            $("td#test-id").css("background-color", "red");
+            break;
+        case "2":
+            $("td#test-id").css("background-color", "blue");
+            break;
+        case "3":
+            $("td#test-id").css("background-color", "yellow");
+            break;
+        default:
+            $("td#test-id").css("background-color", "#D2E4FC");
+
+    }});
+</script>
 </body>
 </html>
