@@ -2,22 +2,24 @@ body{
 	font-family: 'Muli', serif;
 }
 
-.title{
-	font-size:18px;
-	color:black;
+.second{
+	margin-top:0px;
+	margin-bottom:8px;
 }
 
 h1{
-	margin-bottom:20px;
+	margin-bottom:15px;
 }
-
-.second{
-	margin-top:10px;
+.date{
+	font-size-adjust: 70%;
 }
 
 button{
+	min-width: 10%;
+	font-size-adjust: 70%;
 	margin-top:10px;
 	background-color:lightblue;
+	align-self: right;
 }
 
 select{
@@ -27,9 +29,11 @@ select{
 }
 
 input{
-		text-align-last:center;
-
-}.text-right{
-	text-align-last:right;
+	text-align-last:center;
+	width:100%;
 }
 
+.col-md-1{
+	text-align:left;
+	padding-left:0px;
+}
