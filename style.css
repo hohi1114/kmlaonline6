@@ -1,39 +1,21 @@
+.title{
+	color:white;
+}
+/*1버*/
+button{
+	background-color:#525246;
+	color:white;
+}
 body{
-	font-family: 'Muli', serif;
+	background-color:#BFCAC7;
 }
 
-.title{min-height: 16px;
-	font-size:70%;
-	color:black;
-	align-self: center;
-	align-content: center;
-	text-align: center;
+/*3번
+button{
+	background-color:#8DCE90;
+	color:white;
 }
-
-h1{
-	margin-bottom:20px;
+body{
+	background-color:#D9E7D5;
 }
-.date {font-size-adjust: 70%;}
-.second{
-	margin-top:10px;
-}
-
-button{min-width: 10%;
-	font-size-adjust: 70%;
-	margin-top:10px;
-	background-color:lightblue;
-	align-self: right;
-}
-
-select{
-	border:none;
-	width:100%;
-	text-align-last:center;
-}
-
-input{
-		text-align-last:center;
-
-}.text-right{
-	text-align-last:right;
-}
+//*/
