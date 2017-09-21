@@ -10,28 +10,27 @@
 	<body>
 		<div class="container">
 			<div class="row first">
-				<div class="col-md-12 text-center"> 
+				<div class="col-md-12 text-center" > 
 					<h1>Indictment List</h1>
 				</div>
 				<hr width="100%">
 			</div>
 
-
 			<div class="row second">
 				<div class="col-md-12 text-right" >
-					<div class="col-md-1">
-						<button type="button" class="add">Add</button>
+					<div class="col-md-4 text-right">
+						<button class="add">Add Students</button>
 					</div>
-					<button>Initialize</button>
-					<button>Submit</button>
+					<button class="init">Initialize</button>
+					<button class="submit">Submit</button>
 				</div>
 			</div>
 
 			<div class="row third">
 				<div class="table-responsive">
 					<table border="1" width="100%">
-						<form>
-						<tr bgcolor="lightgray">
+						<tr bgcolor=#F2D74F><!--1번-->
+						<!--<tr bgcolor=#4A6635>--><!--3번-->
 							<th class="title" width="16.666666%"> Grade </th>
 							<th class="title" width="16.666666%"> Name </th>
 							<th class="title" width="16.666666%"> Date </th>
@@ -40,37 +39,35 @@
 							<th class="title" width="16.666666%"> Points </th>
 						</tr>
 						<tr>
-						<div class="student">
-							<th>
-								<select>
- 									<option>1</option>
-  									<option>2</option>
-  									<option>3</option>
-								</select>
-							</th>
-							<th>
-								<input type="text" name="Name">
-							</th>
-						</div>
-							<th class="date">
-								<input style="width:100%" type="date" class="text-right" width="100%">
-							</th>
-							<th>
-								<input type="text" name="Accused-by">
-							</th>
-							<th>
-								<input type="text" name="Violated-Article">
-							</th>
-							<th>
-								<input type="text" name="Points">
-							</th>
+							<div id="Add">
+								<td bgcolor='white' id="test">
+									<select  style="width:100%" class='text-center'>
+ 										<option>1</option>
+  										<option>2</option>
+  										<option>3</option>
+									</select>
+								</td>
+								<td>
+									<input id='Name'>
+								</td>
+							</div>
+							<td>
+								<input type="date" class="text-right" width="100%">
+							</td>
+							<td>
+								<input id='Accused'>
+							</td>
+							<td>
+								<input id='Violated'>
+								</th>
+							<td>
+								<input id='Points'>
+							</td>
 						</tr>
-						</form>
 					</table>
 				</div>
 			</div>
-
-		</div>
+		</div> 
     	<script src="javascript.js"></script>
 	</body>
 </html>
